@@ -180,11 +180,12 @@ public class oddEven extends javax.swing.JFrame {
 
         pack();
         setLocationRelativeTo(null);
-    }// </editor-fold>//GEN-END:initComponents
+    } // initComponents end
 
     JFrame frame;
-    private void oddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_oddActionPerformed
-        // TODO add your handling code here:
+
+    // odd button
+    private void oddActionPerformed(java.awt.event.ActionEvent evt) {
         count = count + 1;
         int num = Integer.parseInt(number.getText());
         if (count == 10) {
@@ -214,7 +215,40 @@ public class oddEven extends javax.swing.JFrame {
                 number.setText(String.valueOf(randomNum));
             }
         }
-    } // oddAction end
+    } // odd end
+
+    // even button
+    private void evenActionPerformed(java.awt.event.ActionEvent evt) {
+        count = count + 1;
+        int num = Integer.parseInt(number.getText());
+        if (count == 10) {
+            if (num%2==0) {
+                scorer = scorer + 1;
+                score.setText(String.valueOf(scorer));
+                randomNum = r.nextInt(100);
+            }else {
+                randomNum = r.nextInt(100);
+                score.setText(String.valueOf(randomNum));
+            }
+            
+            JOptionPane.showMessageDialog(this, "Your score is: " + scorer + "/10");
+            count = 0;
+            scorer = 0;
+            score.setText("");
+            randomNum = r.nextInt(100);
+            number.setText(String.valueOf(randomNum));
+        }else {
+            if (num%2==0) {
+                scorer = scorer + 1;
+                score.setText(String.valueOf(scorer));
+                randomNum = r.nextInt(100);
+                number.setText(String.valueOf(randomNum));
+            }else {
+                randomNum = r.nextInt(100);
+                number.setText(String.valueOf(randomNum));
+            }
+        }
+    } // even end
 
 
 
