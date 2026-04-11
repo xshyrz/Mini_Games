@@ -1,5 +1,18 @@
+import java.util.Random;
+import javax.swing.JFrame;
+
 public class oddEven extends javax.swing.JFrame {
+        static int scorer = 0;
+        static int count = 0;
         
+        Random r = new Random();
+        int randomNum;
+        
+        public oddEven() {
+        initComponents();
+        
+        randomNum = r.nextInt(100);
+        number.setText(String.valueOf(randomNum));
     }
 
     @SuppressWarnings("unchecked")
@@ -168,6 +181,7 @@ public class oddEven extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    JFrame frame;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton even;
     private javax.swing.JButton exit;
