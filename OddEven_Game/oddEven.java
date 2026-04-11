@@ -250,7 +250,14 @@ public class oddEven extends javax.swing.JFrame {
         }
     } // even end
 
-
+    // exit button
+    private void exitActionPerformed(java.awt.event.ActionEvent evt) {
+        frame = new JFrame("Exit");
+        if(JOptionPane.showConfirmDialog(frame,"Do you want to exit ?", "Tic Tac Toe",
+        JOptionPane.YES_NO_OPTION) == JOptionPane.YES_NO_OPTION) {
+        System.exit(0);
+    } // exit end
+}
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton even;
