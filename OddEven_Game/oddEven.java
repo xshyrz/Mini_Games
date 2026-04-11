@@ -40,7 +40,7 @@ public class oddEven extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(204, 255, 204));
         jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
 
-        jLabel1.setFont(new java.awt.Font("Felix Titling", 1, 55)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Felix Titling", 1, 55));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("ODD OR EVEN GAME");
 
@@ -58,7 +58,7 @@ public class oddEven extends javax.swing.JFrame {
         jPanel3.setBackground(new java.awt.Color(204, 255, 204));
         jPanel3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
 
-        number.setFont(new java.awt.Font("Gadugi", 1, 99)); // NOI18N
+        number.setFont(new java.awt.Font("Gadugi", 1, 99)); 
         number.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         number.setText(" ");
         number.setToolTipText("");
@@ -75,7 +75,7 @@ public class oddEven extends javax.swing.JFrame {
         );
 
         odd.setBackground(new java.awt.Color(204, 255, 204));
-        odd.setFont(new java.awt.Font("Georgia", 1, 48)); // NOI18N
+        odd.setFont(new java.awt.Font("Georgia", 1, 48));
         odd.setText("ODD");
         odd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -84,7 +84,7 @@ public class oddEven extends javax.swing.JFrame {
         });
 
         even.setBackground(new java.awt.Color(204, 255, 204));
-        even.setFont(new java.awt.Font("Georgia", 1, 48)); // NOI18N
+        even.setFont(new java.awt.Font("Georgia", 1, 48)); 
         even.setText("EVEN");
         even.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -92,12 +92,12 @@ public class oddEven extends javax.swing.JFrame {
             }
         });
 
-        label.setFont(new java.awt.Font("Georgia", 1, 36)); // NOI18N
+        label.setFont(new java.awt.Font("Georgia", 1, 36)); 
         label.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         label.setText("Score :");
 
         exit.setBackground(new java.awt.Color(204, 255, 204));
-        exit.setFont(new java.awt.Font("Georgia", 1, 48)); // NOI18N
+        exit.setFont(new java.awt.Font("Georgia", 1, 48)); 
         exit.setText("EXIT");
         exit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -184,7 +184,7 @@ public class oddEven extends javax.swing.JFrame {
 
     JFrame frame;
 
-    // odd button
+    // Odd button
     private void oddActionPerformed(java.awt.event.ActionEvent evt) {
         count = count + 1;
         int num = Integer.parseInt(number.getText());
@@ -215,9 +215,9 @@ public class oddEven extends javax.swing.JFrame {
                 number.setText(String.valueOf(randomNum));
             }
         }
-    } // odd end
+    } // Odd button end
 
-    // even button
+    // Even button
     private void evenActionPerformed(java.awt.event.ActionEvent evt) {
         count = count + 1;
         int num = Integer.parseInt(number.getText());
@@ -248,18 +248,39 @@ public class oddEven extends javax.swing.JFrame {
                 number.setText(String.valueOf(randomNum));
             }
         }
-    } // even end
+    } // Even button end
 
-    // exit button
+    // Exit button
     private void exitActionPerformed(java.awt.event.ActionEvent evt) {
         frame = new JFrame("Exit");
         if(JOptionPane.showConfirmDialog(frame,"Do you want to exit ?", "Tic Tac Toe",
         JOptionPane.YES_NO_OPTION) == JOptionPane.YES_NO_OPTION) {
         System.exit(0);
-    } // exit end
+    } // Exit button end
 }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+    public static void main(String args[]) {
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(oddEven.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(oddEven.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(oddEven.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(oddEven.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+
+        });
+    }
+
+    // Variables declaration 
     private javax.swing.JButton even;
     private javax.swing.JButton exit;
     private javax.swing.JLabel jLabel1;
@@ -271,5 +292,5 @@ public class oddEven extends javax.swing.JFrame {
     private javax.swing.JLabel number;
     private javax.swing.JButton odd;
     private javax.swing.JLabel score;
-    // End of variables declaration//GEN-END:variables
+    // End of variables declaration
 }
