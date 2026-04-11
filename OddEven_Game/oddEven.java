@@ -105,9 +105,9 @@ public class oddEven extends javax.swing.JFrame {
             }
         });
 
-        score.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        score.setFont(new java.awt.Font("Tahoma", 1, 36)); 
 
-        jLabel2.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Century Gothic", 1, 18)); 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("@shny");
 
@@ -253,7 +253,7 @@ public class oddEven extends javax.swing.JFrame {
     // Exit button
     private void exitActionPerformed(java.awt.event.ActionEvent evt) {
         frame = new JFrame("Exit");
-        if(JOptionPane.showConfirmDialog(frame,"Do you want to exit ?", "Tic Tac Toe",
+        if(JOptionPane.showConfirmDialog(frame,"Do you want to exit ?", "Odd or Even",
         JOptionPane.YES_NO_OPTION) == JOptionPane.YES_NO_OPTION) {
         System.exit(0);
     } // Exit button end
