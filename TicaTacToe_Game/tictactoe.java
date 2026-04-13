@@ -76,6 +76,62 @@ import javax.swing.JFrame;
         jPanel4.setBackground(new java.awt.Color(0x5080BE));
         jPanel4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
 
+        box2.setFont(new java.awt.Font("Tahoma", 1, 100)); 
+        box2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                box2ActionPerformed(evt);
+            }
+        });
+        box1.setFont(new java.awt.Font("Tahoma", 1, 100));
+        box1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                box1ActionPerformed(evt);
+            }
+        });
+        box4.setFont(new java.awt.Font("Tahoma", 1, 100));
+        box4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                box4ActionPerformed(evt);
+            }
+        });
+        box7.setFont(new java.awt.Font("Tahoma", 1, 100));
+        box7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                box7ActionPerformed(evt);
+            }
+        });
+        box5.setFont(new java.awt.Font("Tahoma", 1, 100)); 
+        box5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                box5ActionPerformed(evt);
+            }
+        });
+        box8.setFont(new java.awt.Font("Tahoma", 1, 100)); 
+        box8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                box8ActionPerformed(evt);
+            }
+        });
+        box6.setFont(new java.awt.Font("Tahoma", 1, 100));
+        box6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                box6ActionPerformed(evt);
+            }
+        });
+        box3.setFont(new java.awt.Font("Tahoma", 1, 100)); 
+        box3.setToolTipText("");
+        box3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                box3ActionPerformed(evt);
+            }
+        });
+        box9.setFont(new java.awt.Font("Tahoma", 1, 100)); 
+        box9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                box9ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
