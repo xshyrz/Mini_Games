@@ -241,6 +241,15 @@ import javax.swing.JFrame;
             }
         });
 
+        newgame.setFont(new java.awt.Font("Trebuchet MS", 1, 48));
+        newgame.setBackground(new java.awt.Color(0x5080BE));
+        newgame.setText("NEW GAME");
+        newgame.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                newgameActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
         jPanel7Layout.setHorizontalGroup(
@@ -387,6 +396,42 @@ import javax.swing.JFrame;
         box8.setBackground(Color.LIGHT_GRAY);
         box9.setBackground(Color.LIGHT_GRAY);
     } // Reset button ends
+
+    // New game button
+    private void newgameActionPerformed(java.awt.event.ActionEvent evt) {
+        box1.setEnabled(true);
+        box2.setEnabled(true);
+        box3.setEnabled(true);
+        box4.setEnabled(true);
+        box5.setEnabled(true);
+        box6.setEnabled(true);
+        box7.setEnabled(true);
+        box8.setEnabled(true);
+        box9.setEnabled(true);
+        
+        playerX.setText("0");
+        playerO.setText("0");
+                 
+        box1.setText("");
+        box2.setText("");
+        box3.setText("");
+        box4.setText("");
+        box5.setText("");
+        box6.setText("");
+        box7.setText("");
+        box8.setText("");
+        box9.setText("");
+        
+        box1.setBackground(Color.LIGHT_GRAY);
+        box2.setBackground(Color.LIGHT_GRAY);
+        box3.setBackground(Color.LIGHT_GRAY);
+        box4.setBackground(Color.LIGHT_GRAY);
+        box5.setBackground(Color.LIGHT_GRAY);
+        box6.setBackground(Color.LIGHT_GRAY);
+        box7.setBackground(Color.LIGHT_GRAY);
+        box8.setBackground(Color.LIGHT_GRAY);
+        box9.setBackground(Color.LIGHT_GRAY);
+    } // New game button ends
 
     public static void main(String args[]) {
         
