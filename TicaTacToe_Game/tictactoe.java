@@ -230,6 +230,17 @@ import javax.swing.JFrame;
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jPanel7.setBackground(new java.awt.Color(0x5080BE));
+        jPanel7.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
+        reset.setFont(new java.awt.Font("Trebuchet MS", 1, 48)); 
+        reset.setBackground(new java.awt.Color(0x5080BE));
+        reset.setText("RESET");
+        reset.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                resetActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
         jPanel7Layout.setHorizontalGroup(
@@ -344,6 +355,39 @@ import javax.swing.JFrame;
     
     JFrame frame;
     
+    // Reset button
+    private void resetActionPerformed(java.awt.event.ActionEvent evt) {
+        box1.setEnabled(true);
+        box2.setEnabled(true);
+        box3.setEnabled(true);
+        box4.setEnabled(true);
+        box5.setEnabled(true);
+        box6.setEnabled(true);
+        box7.setEnabled(true);
+        box8.setEnabled(true);
+        box9.setEnabled(true);
+        
+        box1.setText("");
+        box2.setText("");
+        box3.setText("");
+        box4.setText("");
+        box5.setText("");
+        box6.setText("");
+        box7.setText("");
+        box8.setText("");
+        box9.setText("");
+        
+        box1.setBackground(Color.LIGHT_GRAY);
+        box2.setBackground(Color.LIGHT_GRAY);
+        box3.setBackground(Color.LIGHT_GRAY);
+        box4.setBackground(Color.LIGHT_GRAY);
+        box5.setBackground(Color.LIGHT_GRAY);
+        box6.setBackground(Color.LIGHT_GRAY);
+        box7.setBackground(Color.LIGHT_GRAY);
+        box8.setBackground(Color.LIGHT_GRAY);
+        box9.setBackground(Color.LIGHT_GRAY);
+    } // Reset button ends
+
     public static void main(String args[]) {
         
     }
