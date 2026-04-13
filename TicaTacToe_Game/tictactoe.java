@@ -3,10 +3,28 @@ import javax.swing.JOptionPane;
 
   public class tictactoe extends javax.swing.JFrame {
     
+    private String startGame = "X";
+    private int xCount = 0;
+    private int oCount = 0;
+    boolean checker;
+
     public tictactoe() {
         initComponents();
     }
     
+    private void gameScore() {
+        playerX.setText(String.valueOf(xCount));
+        playerO.setText(String.valueOf(oCount));
+    }
+    
+    private void choose_a_Player() {
+        if(startGame.equalsIgnoreCase("X")) {
+            startGame = "O";
+        }else {
+            startGame = "X";
+        }
+    }
+
     @SuppressWarnings("unchecked")
 
     // initComponents
