@@ -138,7 +138,6 @@ import javax.swing.JOptionPane;
             }
         });
         box3.setFont(new java.awt.Font("Tahoma", 1, 100)); 
-        box3.setToolTipText("");
         box3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 box3ActionPerformed(evt);
@@ -469,6 +468,134 @@ import javax.swing.JOptionPane;
             System.exit(0);
         }                        
     } // Exit button ends
+
+    // Box 1
+    private void box1ActionPerformed(java.awt.event.ActionEvent evt) {
+        box1.setText(startGame);
+        
+        if(startGame.equalsIgnoreCase("X")){
+            box1.setForeground(new java.awt.Color(0xFF003B));
+            checker = false;
+        }else {
+            box1.setForeground(new java.awt.Color(0x4E87FA));
+            checker = true;
+        }
+        choose_a_Player();
+        winningGame();
+    } // Box 1 ends
+    // Box 2
+    private void box2ActionPerformed(java.awt.event.ActionEvent evt) {
+        box2.setText(startGame);
+        
+        if(startGame.equalsIgnoreCase("X")){
+            box2.setForeground(new java.awt.Color(0xFF003B));
+            checker = false;
+        }else {
+            box2.setForeground(new java.awt.Color(0x4E87FA));
+            checker = true;
+        }
+        choose_a_Player();
+        winningGame();
+    } // Box 2 ends
+    // Box 3
+    private void box3ActionPerformed(java.awt.event.ActionEvent evt) {
+        box3.setText(startGame);
+        
+        if(startGame.equalsIgnoreCase("X")){
+            box3.setForeground(new java.awt.Color(0xFF003B));
+            checker = false;
+        }else {
+            box3.setForeground(new java.awt.Color(0x4E87FA));
+            checker = true;
+        }
+        choose_a_Player();
+        winningGame();
+    } // Box 3 ends
+    // Box 4
+    private void box4ActionPerformed(java.awt.event.ActionEvent evt) {
+        box4.setText(startGame);
+        
+        if(startGame.equalsIgnoreCase("X")){
+            box4.setForeground(new java.awt.Color(0xFF003B));
+            checker = false;
+        }else {
+            box4.setForeground(new java.awt.Color(0x4E87FA));
+            checker = true;
+        }
+        choose_a_Player();
+        winningGame();
+    } // Box 4 ends
+    // Box 5
+    private void box5ActionPerformed(java.awt.event.ActionEvent evt) {
+        box5.setText(startGame);
+        
+        if(startGame.equalsIgnoreCase("X")){
+            box5.setForeground(new java.awt.Color(0xFF003B));
+            checker = false;
+        }else {
+            box5.setForeground(new java.awt.Color(0x4E87FA));
+            checker = true;
+        }
+        choose_a_Player();
+        winningGame();
+    } // Box 5 ends
+    // Box 6    
+    private void box6ActionPerformed(java.awt.event.ActionEvent evt) {
+        box6.setText(startGame);
+        
+        if(startGame.equalsIgnoreCase("X")){
+            box6.setForeground(new java.awt.Color(0xFF003B));
+            checker = false;
+        }else {
+            box6.setForeground(new java.awt.Color(0x4E87FA));
+            checker = true;
+        }
+        choose_a_Player();
+        winningGame();
+    } // Box 6 ends
+    // Box 7
+    private void box7ActionPerformed(java.awt.event.ActionEvent evt) {
+        box7.setText(startGame);
+        
+        if(startGame.equalsIgnoreCase("X")){
+            box7.setForeground(new java.awt.Color(0xFF003B));
+            checker = false;
+        }else {
+            box7.setForeground(new java.awt.Color(0x4E87FA));
+            checker = true;
+        }
+        choose_a_Player();
+        winningGame();
+    } // Box 7 ends
+    // Box 8
+    private void box8ActionPerformed(java.awt.event.ActionEvent evt) {
+        box8.setText(startGame);
+        
+        if(startGame.equalsIgnoreCase("X")){
+            box8.setForeground(new java.awt.Color(0xFF003B));
+            checker = false;
+        }else {
+            box8.setForeground(new java.awt.Color(0x4E87FA));
+            checker = true;
+        }
+        choose_a_Player();
+        winningGame();
+    } // Box 8 ends
+    
+    // Box 9
+    private void box9ActionPerformed(java.awt.event.ActionEvent evt) {
+        box9.setText(startGame);
+        
+        if(startGame.equalsIgnoreCase("X")){
+            box9.setForeground(new java.awt.Color(0xFF003B));
+            checker = false;
+        }else {
+            box9.setForeground(new java.awt.Color(0x4E87FA));
+            checker = true;
+        }
+        choose_a_Player();
+        winningGame();
+    } // Box 9 ends
     public static void main(String args[]) {
         
     }
