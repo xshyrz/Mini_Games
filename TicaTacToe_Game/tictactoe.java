@@ -25,6 +25,148 @@ import javax.swing.JOptionPane;
         }
     }
 
+    // Winning game
+    private void winningGame() {
+        String b1 = box1.getText();
+        String b2 = box2.getText();
+        String b3 = box3.getText();
+        String b4 = box4.getText();
+        String b5 = box5.getText();
+        String b6 = box6.getText();
+        String b7 = box7.getText();
+        String b8 = box8.getText();
+        String b9 = box9.getText();
+        
+        if (b1 ==("X") && b2 ==("X") && b3 ==("X")) {
+            box1.setBackground(new java.awt.Color(0x7EBBDA));
+            box2.setBackground(new java.awt.Color(0x7EBBDA));
+            box3.setBackground(new java.awt.Color(0x7EBBDA));
+            JOptionPane.showMessageDialog(this,"Player X Won!", "YOU WON!", JOptionPane.INFORMATION_MESSAGE);
+            xCount++;
+            gameScore();
+        }
+          if (b4 ==("X") && b5 ==("X") && b6 ==("X")) {
+            box4.setBackground(new java.awt.Color(0x7EBBDA));
+            box5.setBackground(new java.awt.Color(0x7EBBDA));
+            box6.setBackground(new java.awt.Color(0x7EBBDA));
+            JOptionPane.showMessageDialog(this,"Player X Won!", "YOU WON!", JOptionPane.INFORMATION_MESSAGE);
+            xCount++;
+            gameScore();
+        }
+          if (b7 ==("X") && b8 ==("X") && b9 ==("X")) {
+            box7.setBackground(new java.awt.Color(0x7EBBDA));
+            box8.setBackground(new java.awt.Color(0x7EBBDA));
+            box9.setBackground(new java.awt.Color(0x7EBBDA));
+            JOptionPane.showMessageDialog(this,"Player X Won!", "YOU WON!", JOptionPane.INFORMATION_MESSAGE);
+            xCount++;
+            gameScore();
+        }
+           if (b1 ==("X") && b4 ==("X") && b7 ==("X")) {
+            box1.setBackground(new java.awt.Color(0x7EBBDA));
+            box4.setBackground(new java.awt.Color(0x7EBBDA));
+            box7.setBackground(new java.awt.Color(0x7EBBDA));
+            JOptionPane.showMessageDialog(this,"Player X Won!", "YOU WON!", JOptionPane.INFORMATION_MESSAGE);
+            xCount++;
+            gameScore();
+        }
+            if (b2 ==("X") && b5 ==("X") && b8 ==("X")) {
+            box2.setBackground(new java.awt.Color(0x7EBBDA));
+            box5.setBackground(new java.awt.Color(0x7EBBDA));
+            box8.setBackground(new java.awt.Color(0x7EBBDA));
+            JOptionPane.showMessageDialog(this,"Player X Won!", "YOU WON!", JOptionPane.INFORMATION_MESSAGE);
+            xCount++;
+            gameScore();
+        }
+             if (b3 ==("X") && b6 ==("X") && b9 ==("X")) {
+            box3.setBackground(new java.awt.Color(0x7EBBDA));
+            box6.setBackground(new java.awt.Color(0x7EBBDA));
+            box9.setBackground(new java.awt.Color(0x7EBBDA));
+            JOptionPane.showMessageDialog(this,"Player X Won!", "YOU WON!", JOptionPane.INFORMATION_MESSAGE);
+            xCount++;
+            gameScore();
+        }
+              if (b1 ==("X") && b5 ==("X") && b9 ==("X")) {
+            box1.setBackground(new java.awt.Color(0x7EBBDA));
+            box5.setBackground(new java.awt.Color(0x7EBBDA));
+            box9.setBackground(new java.awt.Color(0x7EBBDA));
+            JOptionPane.showMessageDialog(this,"Player X Won!", "YOU WON!", JOptionPane.INFORMATION_MESSAGE);
+            xCount++;
+            gameScore();
+        }
+               if (b3 ==("X") && b5 ==("X") && b7 ==("X")) {
+            box3.setBackground(new java.awt.Color(0x7EBBDA));
+            box5.setBackground(new java.awt.Color(0x7EBBDA));
+            box7.setBackground(new java.awt.Color(0x7EBBDA));
+            JOptionPane.showMessageDialog(this,"Player X Won!", "YOU WON!", JOptionPane.INFORMATION_MESSAGE);
+            xCount++;
+            gameScore();
+        }
+               if (b1 ==("O") && b2 ==("O") && b3 ==("O")) {
+            box1.setBackground(new java.awt.Color(0x7EBBDA));
+            box2.setBackground(new java.awt.Color(0x7EBBDA));
+            box3.setBackground(new java.awt.Color(0x7EBBDA));
+            JOptionPane.showMessageDialog(this,"Player O Won!", "YOU WON!", JOptionPane.INFORMATION_MESSAGE);
+            oCount++;
+            gameScore();
+        }
+         if (b4 ==("O") && b5 ==("O") && b6 ==("O")) {
+            box4.setBackground(new java.awt.Color(0x7EBBDA));
+            box5.setBackground(new java.awt.Color(0x7EBBDA));
+            box6.setBackground(new java.awt.Color(0x7EBBDA));
+            JOptionPane.showMessageDialog(this,"Player O Won!", "YOU WON!", JOptionPane.INFORMATION_MESSAGE);
+            oCount++;
+            gameScore();
+        }
+          if (b7 ==("O") && b8 ==("O") && b9 ==("O")) {
+            box7.setBackground(new java.awt.Color(0x7EBBDA));
+            box8.setBackground(new java.awt.Color(0x7EBBDA));
+            box9.setBackground(new java.awt.Color(0x7EBBDA));
+            JOptionPane.showMessageDialog(this,"Player O Won!", "YOU WON!", JOptionPane.INFORMATION_MESSAGE);
+            oCount++;
+            gameScore();
+        }
+           if (b1 ==("O") && b4 ==("O") && b7 ==("O")) {
+            box1.setBackground(new java.awt.Color(0x7EBBDA));
+            box4.setBackground(new java.awt.Color(0x7EBBDA));
+            box7.setBackground(new java.awt.Color(0x7EBBDA));
+            JOptionPane.showMessageDialog(this,"Player O Won!", "YOU WON!", JOptionPane.INFORMATION_MESSAGE);
+            oCount++;
+            gameScore();
+        }
+            if (b2 ==("O") && b5 ==("O") && b8 ==("O")) {
+            box2.setBackground(new java.awt.Color(0x7EBBDA));
+            box5.setBackground(new java.awt.Color(0x7EBBDA));
+            box8.setBackground(new java.awt.Color(0x7EBBDA));
+            JOptionPane.showMessageDialog(this,"Player O Won!", "YOU WON!", JOptionPane.INFORMATION_MESSAGE);
+            oCount++;
+            gameScore();
+        }
+             if (b3 ==("O") && b6 ==("O") && b9 ==("O")) {
+            box3.setBackground(new java.awt.Color(0x7EBBDA));
+            box6.setBackground(new java.awt.Color(0x7EBBDA));
+            box9.setBackground(new java.awt.Color(0x7EBBDA));
+            JOptionPane.showMessageDialog(this,"Player O Won!", "YOU WON!", JOptionPane.INFORMATION_MESSAGE);
+            oCount++;
+            gameScore();
+        }
+              if (b1 ==("O") && b5 ==("O") && b9 ==("O")) {
+            box1.setBackground(new java.awt.Color(0x7EBBDA));
+            box5.setBackground(new java.awt.Color(0x7EBBDA));
+            box9.setBackground(new java.awt.Color(0x7EBBDA));
+            JOptionPane.showMessageDialog(this,"Player O Won!", "YOU WON!", JOptionPane.INFORMATION_MESSAGE);
+            oCount++;
+            gameScore();
+        }
+               if (b3 ==("O") && b5 ==("O") && b7 ==("O")) {
+            box3.setBackground(new java.awt.Color(0x7EBBDA));
+            box5.setBackground(new java.awt.Color(0x7EBBDA));
+            box7.setBackground(new java.awt.Color(0x7EBBDA));
+            JOptionPane.showMessageDialog(this,"Player O Won!", "YOU WON!", JOptionPane.INFORMATION_MESSAGE);
+            oCount++;
+            gameScore();
+        }
+    }
+
     @SuppressWarnings("unchecked")
 
     // initComponents
@@ -573,7 +715,7 @@ import javax.swing.JOptionPane;
         choose_a_Player();
         winningGame();
     } // Box 7 ends
-    
+
     // Box 8
     private void box8ActionPerformed(java.awt.event.ActionEvent evt) {
         box8.setText(startGame);
