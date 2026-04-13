@@ -1,4 +1,5 @@
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
   public class tictactoe extends javax.swing.JFrame {
     
@@ -250,6 +251,15 @@ import javax.swing.JFrame;
             }
         });
 
+        exit.setFont(new java.awt.Font("Trebuchet MS", 1, 48));
+        exit.setBackground(new java.awt.Color(0x5080BE));
+        exit.setText("EXIT");
+        exit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                exitActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
         jPanel7Layout.setHorizontalGroup(
@@ -433,6 +443,14 @@ import javax.swing.JFrame;
         box9.setBackground(Color.LIGHT_GRAY);
     } // New game button ends
 
+    // Exit button
+    private void exitActionPerformed(java.awt.event.ActionEvent evt) {
+        frame = new JFrame("Exit");
+            if(JOptionPane.showConfirmDialog(frame,"Do you want to exit ?", "Tic Tac Toe",
+            JOptionPane.YES_NO_OPTION) == JOptionPane.YES_NO_OPTION) {
+            System.exit(0);
+        }                        
+    } // Exit button ends
     public static void main(String args[]) {
         
     }
